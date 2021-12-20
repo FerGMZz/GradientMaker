@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class="barra">
+        <input type="color" value="#FFFFFF" id="color1" class="color"> 
+        <input type="color" value="#FFFFFF" id="color2" class="color"> 
+        <input type="submit" value="Visualizar" onclick="Visualizar(color1.value, color2.value)" id="boton">
+    </nav>
+   
+    <div class="container">
+        
+        <section class="section1">
+            <div class="miniBox1"></div>
+            <p id="textColor1">#FFFFFF</p> 
+        </section>
+
+        <div class="box"></div>
+
+        <section class="section2">
+            <p id="textColor2">#FFFFFF</p>
+            <div class="miniBox2"></div> 
+        </section>
+
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    min-height: 100%;
+
+    font-family: Verdana;
+    color: var(--soft-black);
+    background: var(--clear-white);
+}
+
+/* Colores */
+
+:root{
+    --black:#222;
+    --soft-black:rgb(73, 73, 73);
+    --dash-white:rgb(211, 211, 211);
+    --clear-white: #eaeaea;
+    --clear-gray:rgb(106, 106, 106);
+    --dark-gray:rgb(165, 165, 165);
+}
+
+.container{
+    max-width: 250px;
+    height: auto;
+
+    
+    margin: auto;
+    margin-top: 60px;
+    
+}
+
+/* Visualizador --------------- GRADIENTE */
+
+.box{
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to bottom right, var(--clear-gray) , var(--dash-white));
+    position: relative;
+    border-radius: 10px;
+
+    margin: auto;
+
+    box-shadow: -10px 10px 25px var(--dark-gray);
+}
+
+section div{
+    width: 50px;
+    height: 50px;
+
+    background: var(--dash-white);
+    box-shadow: -10px 10px 25px var(--dark-gray);
+    border-radius: 10px;
+}
+
+section{
+    display: flex;
+}
+
+.section1{
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+.section2{
+    margin-top: 40px;
+    justify-content: end;
+    margin-left: 10px;
+}
+
+section p{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+/* BARRA DE CONTROLES */
+
+.barra{
+    background: var(--black);
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra > *{
+    margin: 10px;
+}
+
+#boton{
+    padding: 10px;
+    font-family:Verdana;
+    font-weight: bold;
+    border: none;
+    background: transparent;
+
+    color: var(--dash-white);
+
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+.color{
+    width: 35px;
+    height: 35px;
+    background: none;
+    border: none;
+
+    border-radius: 5px;
+}
+#boton:hover{
+    background: var(--soft-black);
+    color: var(--clear-white);
+}
+
+input{
+    cursor: pointer;
+}
